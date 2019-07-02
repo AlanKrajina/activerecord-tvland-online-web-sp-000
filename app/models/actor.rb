@@ -10,7 +10,8 @@ class Actor < ActiveRecord::Base
       self.shows.collect do |char|
         char.characters.collect do |ch|
 
-      "#{ch.name} - #{char.name}".join(" - ")
+      "#{ch.name} - #{char.name}"
+      .join(" - ")
  end
     end  
   end
