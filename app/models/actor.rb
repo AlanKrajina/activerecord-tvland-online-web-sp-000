@@ -12,7 +12,7 @@ class Actor < ActiveRecord::Base
       
       binding.pry
       
- #     "#{char.name - char.name}"
+ #     "#{self.characters.name - char.name}"
     end  
   end
 end
